@@ -1,0 +1,360 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1897.8572801409396,
+            "y": 364.14020188105229
+          },
+          "nodeIndex": "AML_Etablissement",
+          "nodeLineageTag": "e4fabf75-7952-40ab-8356-1be4095b95cd",
+          "size": {
+            "height": 237.25867746014399,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 706.54259629807848,
+            "y": 385.32461077662862
+          },
+          "nodeIndex": "Article",
+          "nodeLineageTag": "5544ba62-862b-4a93-af2c-e6095b2dbd05",
+          "size": {
+            "height": 373.28532365642263,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 2042.0481775312296,
+            "y": 723.27150894508259
+          },
+          "nodeIndex": "Compte",
+          "nodeLineageTag": "a019ff04-ef77-481e-b924-14d59cdc406b",
+          "size": {
+            "height": 168.93201730678265,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 609.33680218673874,
+            "y": 5.9390934133021389
+          },
+          "nodeIndex": "Entete",
+          "nodeLineageTag": "0d03534f-ef87-4067-8aaf-072b6e4553be",
+          "size": {
+            "height": 253.85156476501271,
+            "width": 234
+          },
+          "zIndex": 20
+        },
+        {
+          "location": {
+            "x": 1081.1429071736402,
+            "y": 1.310142357038373
+          },
+          "nodeIndex": "Etablissement",
+          "nodeLineageTag": "e1ebafdb-0e1d-4dab-9398-52a5b967dd5d",
+          "size": {
+            "height": 224.34591684763097,
+            "width": 234
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 922.272693856989,
+            "y": 1233.6689708466392
+          },
+          "nodeIndex": "Ge_Article_Laboratoire",
+          "nodeLineageTag": "5b9ab778-4eba-47ba-9d48-86a82617da62",
+          "size": {
+            "height": 187.67221784192429,
+            "width": 234
+          },
+          "zIndex": 18
+        },
+        {
+          "location": {
+            "x": 28.179156722689413,
+            "y": 0
+          },
+          "nodeIndex": "Laboratoire",
+          "nodeLineageTag": "c6437ec9-e8b0-461b-815c-bf8c89a69bec",
+          "size": {
+            "height": 157.65735212887148,
+            "width": 234
+          },
+          "zIndex": 11
+        },
+        {
+          "location": {
+            "x": 193.75267492858757,
+            "y": 190.54023355554577
+          },
+          "nodeIndex": "Ligne",
+          "nodeLineageTag": "fc6bb513-3514-4254-939a-fd987585515f",
+          "size": {
+            "height": 515.88388088316071,
+            "width": 357.14563503419009
+          },
+          "zIndex": 24
+        },
+        {
+          "location": {
+            "x": 1180.1707509576249,
+            "y": 1015.3786188468844
+          },
+          "nodeIndex": "Marche",
+          "nodeLineageTag": "a8979949-cb13-41e9-8659-aa9a1baaf947",
+          "size": {
+            "height": 145,
+            "width": 234
+          },
+          "zIndex": 12
+        },
+        {
+          "location": {
+            "x": 1091.913789326022,
+            "y": 652.14959668166284
+          },
+          "nodeIndex": "Produit",
+          "nodeLineageTag": "67c08ad2-72cd-4a3d-be11-21586d5ddf69",
+          "size": {
+            "height": 179.59886915024481,
+            "width": 234
+          },
+          "zIndex": 13
+        },
+        {
+          "location": {
+            "x": 1724.9740509529229,
+            "y": 88.0973617633907
+          },
+          "nodeIndex": "TypeEtablissement",
+          "nodeLineageTag": "fa5d576e-3e52-4a90-ab9e-40d92a6f1aed",
+          "size": {
+            "height": 151.8026785767106,
+            "width": 234
+          },
+          "zIndex": 14
+        },
+        {
+          "location": {
+            "x": 1539.4334899438527,
+            "y": 733.9531115718828
+          },
+          "nodeIndex": "TypeProduit",
+          "nodeLineageTag": "4d30a7de-9275-43e3-8437-e75e869ec0b3",
+          "size": {
+            "height": 146.38268695096019,
+            "width": 234
+          },
+          "zIndex": 15
+        },
+        {
+          "location": {
+            "x": 333.33156398505935,
+            "y": 1232.15668055202
+          },
+          "nodeIndex": "Utilisateur",
+          "nodeLineageTag": "f1c64d34-998d-48aa-983b-524696f8356f",
+          "size": {
+            "height": 152.02001953991589,
+            "width": 234
+          },
+          "zIndex": 17
+        },
+        {
+          "location": {
+            "x": 1523.2128049526127,
+            "y": 391.59150588190118
+          },
+          "nodeIndex": "Table_Mapping_Annuaire",
+          "nodeLineageTag": "3a7ff2e3-5feb-4590-a699-344fbc62cc1e",
+          "size": {
+            "height": 185.8980036254369,
+            "width": 234
+          },
+          "zIndex": 16
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 744.06486346241934
+          },
+          "nodeIndex": "Dates",
+          "nodeLineageTag": "ef3e1d85-6f03-4f59-b9d0-09e14eeafc23",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 19
+        },
+        {
+          "location": {
+            "x": 2721.7111693568186,
+            "y": 25.898133018735706
+          },
+          "nodeIndex": "Paramètre",
+          "nodeLineageTag": "36f73dfd-753a-4ee5-89bf-e6598c39e321",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 1543.5922989019932,
+            "y": 936.896041246837
+          },
+          "nodeIndex": "Dates_Articles",
+          "nodeLineageTag": "29a73508-f39f-4bc5-b773-73a381a10f82",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 1231.7784179268604,
+            "y": 306.717567511379
+          },
+          "nodeIndex": "Dates_Entete",
+          "nodeLineageTag": "00a4409e-2d60-4c7c-926e-88bf9f551764",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 21
+        },
+        {
+          "location": {
+            "x": 3271.6700678356092,
+            "y": 332.70582421960472
+          },
+          "nodeIndex": "Export_Eudonet_DocumentsPraticiens",
+          "nodeLineageTag": "b0074a74-834d-41e1-8813-69e4e89d8e20",
+          "size": {
+            "height": 466.38807934387353,
+            "width": 333.57081913491629
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 5029.5514005225168,
+            "y": 315.38203611893789
+          },
+          "nodeIndex": "Export_Eudonet_Etablissements",
+          "nodeLineageTag": "48be3711-3f71-44ee-8606-1d3fdad9d443",
+          "size": {
+            "height": 1000,
+            "width": 423.97064177056427
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 3831.8092136933783,
+            "y": 307.81311943587542
+          },
+          "nodeIndex": "Export_Eudonet_Praticiens",
+          "nodeLineageTag": "90c323db-8ed1-4cd7-8936-e62f82982d83",
+          "size": {
+            "height": 956.76924187006136,
+            "width": 393.83736755868222
+          },
+          "zIndex": 23
+        },
+        {
+          "location": {
+            "x": 4363.5260895634619,
+            "y": 332.65383560151474
+          },
+          "nodeIndex": "Export_Eudonet_ProspectionsPraticiens",
+          "nodeLineageTag": "26d9c658-b52e-45ed-a6dc-6aa777947c3f",
+          "size": {
+            "height": 768.87259397764274,
+            "width": 509.12989497805847
+          },
+          "zIndex": 22
+        },
+        {
+          "location": {
+            "x": 3264.4213014302891,
+            "y": 874.00097928588241
+          },
+          "nodeIndex": "Export_Eudonet_SuivisQuotidiens",
+          "nodeLineageTag": "bbc7bfdc-98c2-4538-9d59-ed6a77e98272",
+          "size": {
+            "height": 402.19110384899318,
+            "width": 333.57081913491584
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 2367.1766349722056,
+            "y": 0
+          },
+          "nodeIndex": "Table suivi commandes",
+          "nodeLineageTag": "3e4b7328-4a7a-43f8-885b-90e2aabe4ef8",
+          "size": {
+            "height": 1000,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 5503.5220422930815,
+            "y": 560.67059434428177
+          },
+          "nodeIndex": "GOLD Article",
+          "nodeLineageTag": "2b891b78-b2e3-439c-8e28-665b002a1306",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5787.5220422930815,
+            "y": 560.67059434428177
+          },
+          "nodeIndex": "GOLD Ligne",
+          "nodeLineageTag": "11426dd1-a484-41ce-bd46-45e50cd04e36",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Toutes les tables",
+      "zoomValue": 60.721021353383819,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Toutes les tables",
+  "defaultDiagram": "Toutes les tables"
+}

@@ -1,0 +1,6 @@
+// En savoir plus sur les requêtes DAX sur https://aka.ms/dax-queries
+
+// Voici un exemple de requête DAX de votre modèle, cliquez sur « Exécuter »
+// Essayez d’autres requêtes DAX en cliquant avec le bouton droit sur une table, une colonne ou une mesure dans le volet de données, puis en en choisissant une dans « Requêtes rapides »
+EVALUATE
+    TOPN(10, 'Ligne')
