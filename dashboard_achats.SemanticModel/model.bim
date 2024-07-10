@@ -1926,6 +1926,52 @@
                   }
                 ]
               },
+              "GOLD_ligne.Evolution_volume_": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "GOLD Ligne",
+                    "ConceptualProperty": "Evolution_volume_%"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Evolution_volume_%": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "evolution_volume_ percentage": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "evolution_volume_ pct": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "Evol %": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
               "GOLD_ligne.ID_article": {
                 "Definition": {
                   "Binding": {
@@ -3649,6 +3695,109 @@
                   }
                 ]
               },
+              "GOLD_ligne.evolution_volume": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "GOLD Ligne",
+                    "ConceptualProperty": "Evolution_volume"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "evolution volume": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Evolution_volume": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "evolution capacity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "evolution size": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "evolution bulk": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "evolution tome": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.475
+                    }
+                  },
+                  {
+                    "evolution book": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.461
+                    }
+                  },
+                  {
+                    "evolution work": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.461
+                    }
+                  },
+                  {
+                    "evolution edition": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.451
+                    }
+                  },
+                  {
+                    "Evol Valeur": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
               "GOLD_ligne.libelle_fabricant": {
                 "Definition": {
                   "Binding": {
@@ -3668,6 +3817,16 @@
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
+                    }
+                  },
+                  {
+                    "Libelle Fournisseur": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   }
                 ]
@@ -4136,6 +4295,61 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.476
+                    }
+                  },
+                  {
+                    "Volume": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "GOLD_ligne.volume_article_N_1": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "GOLD Ligne",
+                    "ConceptualProperty": "Volume_article_N-1"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "volume article N 1": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Volume_article_N-1": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "N 1": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "article N 1": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "Volume N-1": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   }
                 ]
@@ -7191,54 +7405,21 @@
                 },
                 "State": "Generated"
               },
-              "GOLD_ligne_e_id_fabricant_fabricate_GOLD_ligne": {
+              "GOLD_ligne_has_Evolution_volume_": {
                 "Binding": {
                   "ConceptualEntity": "GOLD Ligne"
                 },
                 "Phrasings": [
                   {
-                    "ID": "e_id_fabricants_fabricate_GOLD_lignes",
-                    "State": "Generated",
-                    "Verb": {
-                      "Object": {
-                        "Role": "GOLD_ligne"
-                      },
-                      "Subject": {
-                        "Role": "GOLD_ligne.e_id_fabricant"
-                      },
-                      "Verbs": [
-                        {
-                          "fabricate": {
-                            "State": "Generated"
-                          }
-                        }
-                      ]
-                    },
-                    "Weight": 0.75
-                  },
-                  {
                     "Attribute": {
                       "Object": {
-                        "Role": "GOLD_ligne"
-                      },
-                      "Subject": {
-                        "Role": "GOLD_ligne.e_id_fabricant"
-                      }
-                    },
-                    "ID": "e_id_fabricants_have_GOLD_lignes",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "GOLD_ligne.e_id_fabricant"
+                        "Role": "GOLD_ligne.Evolution_volume_"
                       },
                       "Subject": {
                         "Role": "GOLD_ligne"
                       }
                     },
-                    "ID": "GOLD_lignes_have_e_id_fabricants",
+                    "ID": "GOLD_lignes_have_Evolution_volume_",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -7249,9 +7430,9 @@
                       "Entity": "GOLD_ligne"
                     }
                   },
-                  "GOLD_ligne.e_id_fabricant": {
+                  "GOLD_ligne.Evolution_volume_": {
                     "Target": {
-                      "Entity": "GOLD_ligne.e_id_fabricant"
+                      "Entity": "GOLD_ligne.Evolution_volume_"
                     }
                   }
                 },
@@ -7702,6 +7883,72 @@
                 },
                 "State": "Generated"
               },
+              "GOLD_ligne_has_e_id_fabricant": {
+                "Binding": {
+                  "ConceptualEntity": "GOLD Ligne"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "GOLD_ligne.e_id_fabricant"
+                      },
+                      "Subject": {
+                        "Role": "GOLD_ligne"
+                      }
+                    },
+                    "ID": "GOLD_lignes_have_e_id_fabricants",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "e_id_fabricants_fabricate_GOLD_lignes",
+                    "State": "Generated",
+                    "Verb": {
+                      "Object": {
+                        "Role": "GOLD_ligne"
+                      },
+                      "Subject": {
+                        "Role": "GOLD_ligne.e_id_fabricant"
+                      },
+                      "Verbs": [
+                        {
+                          "fabricate": {
+                            "State": "Generated"
+                          }
+                        }
+                      ]
+                    },
+                    "Weight": 0.75
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "GOLD_ligne"
+                      },
+                      "Subject": {
+                        "Role": "GOLD_ligne.e_id_fabricant"
+                      }
+                    },
+                    "ID": "e_id_fabricants_have_GOLD_lignes",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "GOLD_ligne": {
+                    "Target": {
+                      "Entity": "GOLD_ligne"
+                    }
+                  },
+                  "GOLD_ligne.e_id_fabricant": {
+                    "Target": {
+                      "Entity": "GOLD_ligne.e_id_fabricant"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "GOLD_ligne_has_e_id_ligne": {
                 "Binding": {
                   "ConceptualEntity": "GOLD Ligne"
@@ -8131,6 +8378,39 @@
                 },
                 "State": "Generated"
               },
+              "GOLD_ligne_has_evolution_volume": {
+                "Binding": {
+                  "ConceptualEntity": "GOLD Ligne"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "GOLD_ligne.evolution_volume"
+                      },
+                      "Subject": {
+                        "Role": "GOLD_ligne"
+                      }
+                    },
+                    "ID": "GOLD_lignes_have_evolution_volume",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "GOLD_ligne": {
+                    "Target": {
+                      "Entity": "GOLD_ligne"
+                    }
+                  },
+                  "GOLD_ligne.evolution_volume": {
+                    "Target": {
+                      "Entity": "GOLD_ligne.evolution_volume"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "GOLD_ligne_has_libelle_fabricant": {
                 "Binding": {
                   "ConceptualEntity": "GOLD Ligne"
@@ -8291,6 +8571,39 @@
                   "GOLD_ligne.volume_article": {
                     "Target": {
                       "Entity": "GOLD_ligne.volume_article"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "GOLD_ligne_has_volume_article_N_1": {
+                "Binding": {
+                  "ConceptualEntity": "GOLD Ligne"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "GOLD_ligne.volume_article_N_1"
+                      },
+                      "Subject": {
+                        "Role": "GOLD_ligne"
+                      }
+                    },
+                    "ID": "GOLD_lignes_have_volume_article_N_1",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "GOLD_ligne": {
+                    "Target": {
+                      "Entity": "GOLD_ligne"
+                    }
+                  },
+                  "GOLD_ligne.volume_article_N_1": {
+                    "Target": {
+                      "Entity": "GOLD_ligne.volume_article_N_1"
                     }
                   }
                 },
@@ -9863,6 +10176,24 @@
             ],
             "formatString": "0",
             "lineageTag": "aabc36e1-5736-4b8e-b451-3e958aa25824"
+          },
+          {
+            "name": "Volume_article_N-1",
+            "expression": "CALCULATE(SUM('GOLD Ligne'[eQteInit]),SAMEPERIODLASTYEAR(Dates_lignes[Date]))",
+            "formatString": "#,0",
+            "lineageTag": "3707c915-2b67-4567-a9dd-1bbc51131b74"
+          },
+          {
+            "name": "Evolution_volume",
+            "expression": "[Volume_article]-[Volume_article_N-1]",
+            "formatString": "#,0",
+            "lineageTag": "b18399b9-7812-4734-a615-4c6e1db4d696"
+          },
+          {
+            "name": "Evolution_volume_%",
+            "expression": "[Evolution_volume] / [Volume_article_N-1]",
+            "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+            "lineageTag": "517dde09-382b-4115-93f9-9c7ab85a0112"
           }
         ],
         "partitions": [
