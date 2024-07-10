@@ -4225,6 +4225,72 @@
                   }
                 ]
               },
+              "GOLD_ligne.poids_marche": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "GOLD Ligne",
+                    "ConceptualProperty": "Poids_marche"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "poids marche": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Poids_marche": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "Poids marché": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "GOLD_ligne.poids_marche_TTC": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "GOLD Ligne",
+                    "ConceptualProperty": "Poids_marche_TTC"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "poids marche TTC": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Poids_marche_TTC": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "Poids marché": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
               "GOLD_ligne.rank_top_N_article": {
                 "Definition": {
                   "Binding": {
@@ -6179,16 +6245,6 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "Libellé Produit": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  },
-                  {
                     "Libellé Article": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
@@ -6615,7 +6671,7 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "Evol Valeur": {
+                    "Evol_Valeur": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -6625,7 +6681,7 @@
                     }
                   },
                   {
-                    "Evol_Valeur": {
+                    "Evol Valeur": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -6773,48 +6829,6 @@
                 "Terms": [
                   {
                     "Poids du marché": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  }
-                ]
-              },
-              "ligne.rank_topn_article": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Ligne",
-                    "ConceptualProperty": "Rank_TopN_article"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "Pos.": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  }
-                ]
-              },
-              "ligne.rank_topn_article_montant": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Ligne",
-                    "ConceptualProperty": "Rank_TopN_article_montant"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "Pos.": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -9293,6 +9307,72 @@
                 },
                 "State": "Generated"
               },
+              "GOLD_ligne_has_poids_marche": {
+                "Binding": {
+                  "ConceptualEntity": "GOLD Ligne"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "GOLD_ligne.poids_marche"
+                      },
+                      "Subject": {
+                        "Role": "GOLD_ligne"
+                      }
+                    },
+                    "ID": "GOLD_lignes_have_poids_marche",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "GOLD_ligne": {
+                    "Target": {
+                      "Entity": "GOLD_ligne"
+                    }
+                  },
+                  "GOLD_ligne.poids_marche": {
+                    "Target": {
+                      "Entity": "GOLD_ligne.poids_marche"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "GOLD_ligne_has_poids_marche_TTC": {
+                "Binding": {
+                  "ConceptualEntity": "GOLD Ligne"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "GOLD_ligne.poids_marche_TTC"
+                      },
+                      "Subject": {
+                        "Role": "GOLD_ligne"
+                      }
+                    },
+                    "ID": "GOLD_lignes_have_poids_marche_TTC",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "GOLD_ligne": {
+                    "Target": {
+                      "Entity": "GOLD_ligne"
+                    }
+                  },
+                  "GOLD_ligne.poids_marche_TTC": {
+                    "Target": {
+                      "Entity": "GOLD_ligne.poids_marche_TTC"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "GOLD_ligne_has_rank_top_N_article": {
                 "Binding": {
                   "ConceptualEntity": "GOLD Ligne"
@@ -11208,6 +11288,18 @@
             ],
             "formatString": "0",
             "lineageTag": "499a9eb0-405d-4782-9665-6a399afe67d0"
+          },
+          {
+            "name": "Poids_marche",
+            "expression": "SUM('GOLD Ligne'[eQteInit])/CALCULATE(SUM('GOLD Ligne'[eQteInit]),ALL('GOLD Article'[sLibelleMarche]))",
+            "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+            "lineageTag": "aded281a-d94a-4999-a9af-86acd0da1c8f"
+          },
+          {
+            "name": "Poids_marche_TTC",
+            "expression": "SUM('GOLD Ligne'[eMontTTCUCD])/CALCULATE(SUM('GOLD Ligne'[eMontTTCUCD]),ALL('GOLD Article'[sLibelleMarche]))",
+            "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+            "lineageTag": "a2068125-7344-4bf4-8ced-846dcd185704"
           }
         ],
         "partitions": [
