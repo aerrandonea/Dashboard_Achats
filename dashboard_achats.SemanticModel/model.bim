@@ -12,7 +12,7 @@
       },
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"GOLD Article\",\"GOLD Ligne\",\"GOLD Compte\",\"GOLD Etablissement\",\"GOLD Produit\",\"GOLD Utilisateur\",\"Erreurs dans GOLD Article\"]"
+        "value": "[\"GOLD Ligne\",\"GOLD Article\",\"GOLD Compte\",\"GOLD Etablissement\",\"GOLD Produit\",\"GOLD Utilisateur\",\"Erreurs dans GOLD Article\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -25,126 +25,8 @@
         "name": "fr-FR",
         "linguisticMetadata": {
           "content": {
-            "Entities": {
-              "paramètre": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Paramètre"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "paramètre": {
-                      "State": "Generated",
-                      "Weight": 0.87
-                    }
-                  }
-                ]
-              },
-              "paramètre.paramètre": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Paramètre",
-                    "ConceptualProperty": "Paramètre"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "paramètre": {
-                      "State": "Generated"
-                    }
-                  }
-                ]
-              },
-              "paramètre.valeur_paramètre": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Paramètre",
-                    "ConceptualProperty": "Valeur Paramètre"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "valeur paramètre": {
-                      "State": "Generated"
-                    }
-                  }
-                ]
-              }
-            },
             "Language": "en-US",
-            "Relationships": {
-              "paramètre_has_paramètre": {
-                "Binding": {
-                  "ConceptualEntity": "Paramètre"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "paramètre.paramètre"
-                      },
-                      "Subject": {
-                        "Role": "paramètre"
-                      }
-                    },
-                    "ID": "paramètres_have_paramètres",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "paramètre": {
-                    "Target": {
-                      "Entity": "paramètre"
-                    }
-                  },
-                  "paramètre.paramètre": {
-                    "Target": {
-                      "Entity": "paramètre.paramètre"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "paramètre_has_valeur_paramètre": {
-                "Binding": {
-                  "ConceptualEntity": "Paramètre"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "paramètre.valeur_paramètre"
-                      },
-                      "Subject": {
-                        "Role": "paramètre"
-                      }
-                    },
-                    "ID": "paramètres_have_valeur_paramètre",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "paramètre": {
-                    "Target": {
-                      "Entity": "paramètre"
-                    }
-                  },
-                  "paramètre.valeur_paramètre": {
-                    "Target": {
-                      "Entity": "paramètre.valeur_paramètre"
-                    }
-                  }
-                },
-                "State": "Generated"
-              }
-            },
-            "Version": "3.5.0"
+            "Version": "1.0.0"
           },
           "contentType": "json"
         }
@@ -180,14 +62,14 @@
           "in",
           "    Table.TransformColumns(Source, pairs),",
           "  #\"Index ajouté\" = Table.AddIndexColumn(#\"Incompatibilités de types détectées\", \"Numéro de ligne\" ,1),",
-          "  #\"Conserver les erreurs\" = Table.SelectRowsWithErrors(#\"Index ajouté\", {\"ID_Article\", \"eIdArticle\", \"sLibelleCourt\", \"ID_Produit\", \"eDPxNegocieTTCUCD\", \"eIDLaboratoire\", \"sRaisonSocialeBCB\", \"sLibelleMarche\", \"eDateModif\", \"eDateCreation\", \"eIdMarche\", \"sCodeLPPLaboratoire\", \"eIdEtablissement\"}),",
-          "  #\"Colonnes permutées\" = Table.ReorderColumns(#\"Conserver les erreurs\", {\"Numéro de ligne\", \"ID_Article\", \"eIdArticle\", \"sLibelleCourt\", \"ID_Produit\", \"eDPxNegocieTTCUCD\", \"eIDLaboratoire\", \"sRaisonSocialeBCB\", \"sLibelleMarche\", \"eDateModif\", \"eDateCreation\", \"eIdMarche\", \"sCodeLPPLaboratoire\", \"eIdEtablissement\"})",
+          "  #\"Conserver les erreurs\" = Table.SelectRowsWithErrors(#\"Index ajouté\", {\"ID_Article\", \"eIdArticle\", \"sLibelleCourt\", \"ID_Produit\", \"eDPxNegocieTTCUCD\", \"eIDLaboratoire\", \"sRaisonSocialeBCB\", \"sLibelleMarche\", \"eDateModif\", \"eDateCreation\", \"eIdMarche\", \"sCodeLPPLaboratoire\", \"eIdEtablissement\", \"Personnalisé\"}),",
+          "  #\"Colonnes permutées\" = Table.ReorderColumns(#\"Conserver les erreurs\", {\"Numéro de ligne\", \"ID_Article\", \"eIdArticle\", \"sLibelleCourt\", \"ID_Produit\", \"eDPxNegocieTTCUCD\", \"eIDLaboratoire\", \"sRaisonSocialeBCB\", \"sLibelleMarche\", \"eDateModif\", \"eDateCreation\", \"eIdMarche\", \"sCodeLPPLaboratoire\", \"eIdEtablissement\", \"Personnalisé\"})",
           "in",
           "  #\"Colonnes permutées\""
         ],
         "kind": "m",
-        "lineageTag": "7eea3e1f-c466-4a8d-a52f-ccc0db7cbd18",
-        "queryGroup": "Erreurs des requêtes – 10/07/2024 18:16:03"
+        "lineageTag": "5d043d28-f86d-4b48-a893-04dfc743f24d",
+        "queryGroup": "Erreurs des requêtes – 10/07/2024 19:51:51"
       }
     ],
     "queryGroups": [
@@ -198,56 +80,48 @@
             "value": "0"
           }
         ],
-        "description": "Erreurs dans les requêtes qui ont été chargées sur 10/07/2024 18:16:03.",
-        "folder": "Erreurs des requêtes – 10/07/2024 18:16:03"
+        "description": "Erreurs dans les requêtes qui ont été chargées sur 10/07/2024 19:51:51.",
+        "folder": "Erreurs des requêtes – 10/07/2024 19:51:51"
       }
     ],
     "relationships": [
       {
-        "name": "AutoDetected_262f39ac-31e8-4066-a81a-c2be4f654df2",
+        "name": "AutoDetected_c1692411-e168-4525-9ce2-da3ddd2e1a49",
         "fromColumn": "ID_Article",
         "fromTable": "GOLD Ligne",
         "toColumn": "ID_Article",
         "toTable": "GOLD Article"
       },
       {
-        "name": "3f822557-a65d-4ff4-a6df-7543fdef1794",
-        "fromColumn": "eDateCreation",
-        "fromTable": "GOLD Ligne",
-        "joinOnDateBehavior": "datePartOnly",
-        "toColumn": "Date",
-        "toTable": "LocalDateTable_bc23968f-8e56-4a49-be53-058ac1bf290e"
-      },
-      {
-        "name": "AutoDetected_de46e646-7bb7-4a97-a70e-d80e8980b6c1",
+        "name": "AutoDetected_8bb576df-443b-454e-985e-e0723cd82197",
         "fromColumn": "ID_Etablissement",
         "fromTable": "GOLD Ligne",
         "toColumn": "ID_Etablissement",
         "toTable": "GOLD Etablissement"
       },
       {
-        "name": "AutoDetected_df4a1195-faf3-473d-a60f-6b52867ca991",
+        "name": "AutoDetected_c98b6848-5083-4cc5-a020-ee90f9b749d9",
         "fromColumn": "ID_Utilisateur",
         "fromTable": "GOLD Ligne",
         "toColumn": "ID_Utilisateur",
         "toTable": "GOLD Utilisateur"
       },
       {
-        "name": "AutoDetected_38e53d2e-d917-486f-97ce-9f6c1331ae90",
+        "name": "AutoDetected_80dca6c0-8492-4113-aa86-276b572117f0",
         "fromColumn": "ID_Compte",
         "fromTable": "GOLD Ligne",
         "toColumn": "ID_Compte",
         "toTable": "GOLD Compte"
       },
       {
-        "name": "AutoDetected_035a55d1-77ae-4016-8ca0-17ab6ef437bd",
+        "name": "AutoDetected_86e167b2-5e6a-426b-adcd-9ae137d02e1f",
         "fromColumn": "ID_Produit",
         "fromTable": "GOLD Article",
         "toColumn": "ID_Produit",
         "toTable": "GOLD Produit"
       },
       {
-        "name": "AutoDetected_cd933d5a-2ff8-4809-9feb-b02cf6394b97",
+        "name": "AutoDetected_c19e4eaf-9191-455a-a770-44e195fe636e",
         "fromColumn": "eIdEtablissement",
         "fromTable": "GOLD Article",
         "isActive": false,
@@ -255,12 +129,19 @@
         "toTable": "GOLD Etablissement"
       },
       {
-        "name": "f1ae06c3-1df3-4fdb-9c85-98329700b112",
+        "name": "ff837ca1-d294-49e1-97c4-73e23b2166bf",
         "fromColumn": "Date",
-        "fromTable": "Dates_Lignes",
+        "fromTable": "Dates_lignes",
         "joinOnDateBehavior": "datePartOnly",
         "toColumn": "Date",
-        "toTable": "LocalDateTable_0c38a5aa-b677-4989-b1dc-0583d67a6875"
+        "toTable": "LocalDateTable_43268c74-f44f-4d01-8a9e-0a7034cf8c7d"
+      },
+      {
+        "name": "6dacb3ca-db16-7a32-b366-4b640a9abb0d",
+        "fromColumn": "eDateCreation",
+        "fromTable": "GOLD Ligne",
+        "toColumn": "Date",
+        "toTable": "Dates_lignes"
       }
     ],
     "sourceQueryCulture": "fr-FR",
@@ -476,67 +357,15 @@
         ]
       },
       {
-        "name": "Paramètre",
-        "annotations": [
-          {
-            "name": "PBI_Id",
-            "value": "0c9560c1aac841dda77a466e2904bfc5"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Paramètre",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataType": "int64",
-            "extendedProperties": [
-              {
-                "name": "ParameterMetadata",
-                "type": "json",
-                "value": {
-                  "version": 0
-                }
-              }
-            ],
-            "formatString": "0",
-            "isDataTypeInferred": true,
-            "isNameInferred": false,
-            "lineageTag": "867034c2-d9a0-4d8a-8e6d-241035d358da",
-            "sourceColumn": "[Value]",
-            "summarizeBy": "none",
-            "type": "calculatedTableColumn"
-          }
-        ],
-        "lineageTag": "36f73dfd-753a-4ee5-89bf-e6598c39e321",
-        "measures": [
-          {
-            "name": "Valeur Paramètre",
-            "expression": "SELECTEDVALUE('Paramètre'[Paramètre], 10)",
-            "formatString": "0",
-            "lineageTag": "986ad55f-264d-427f-8956-8ce9e983034b"
-          }
-        ],
-        "partitions": [
-          {
-            "name": "Paramètre",
-            "mode": "import",
-            "source": {
-              "expression": "GENERATESERIES(1, 100, 1)",
-              "type": "calculated"
-            }
-          }
-        ]
-      },
-      {
         "name": "GOLD Ligne",
         "annotations": [
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "columns": [
@@ -572,7 +401,7 @@
             "annotations": [
               {
                 "name": "SummarizationSetBy",
-                "value": "Automatic"
+                "value": "User"
               }
             ],
             "dataType": "int64",
@@ -586,7 +415,7 @@
             "annotations": [
               {
                 "name": "SummarizationSetBy",
-                "value": "Automatic"
+                "value": "User"
               }
             ],
             "dataType": "int64",
@@ -600,7 +429,7 @@
             "annotations": [
               {
                 "name": "SummarizationSetBy",
-                "value": "Automatic"
+                "value": "User"
               }
             ],
             "dataType": "int64",
@@ -614,7 +443,7 @@
             "annotations": [
               {
                 "name": "SummarizationSetBy",
-                "value": "Automatic"
+                "value": "User"
               }
             ],
             "dataType": "int64",
@@ -700,18 +529,7 @@
             "formatString": "General Date",
             "lineageTag": "0be277b0-948f-4caf-9b6d-5e2023e0e999",
             "sourceColumn": "eDateCreation",
-            "summarizeBy": "none",
-            "variations": [
-              {
-                "name": "Variation",
-                "defaultHierarchy": {
-                  "hierarchy": "Hiérarchie de dates",
-                  "table": "LocalDateTable_bc23968f-8e56-4a49-be53-058ac1bf290e"
-                },
-                "isDefault": true,
-                "relationship": "3f822557-a65d-4ff4-a6df-7543fdef1794"
-              }
-            ]
+            "summarizeBy": "none"
           },
           {
             "name": "Libelle_Fabricant",
@@ -731,10 +549,11 @@
             "annotations": [
               {
                 "name": "SummarizationSetBy",
-                "value": "Automatic"
+                "value": "User"
               }
             ],
-            "dataType": "string",
+            "dataType": "int64",
+            "formatString": "#,0",
             "lineageTag": "b363c024-eea1-4d45-8ac3-39e0f07bdd47",
             "sourceColumn": "eQteInit",
             "summarizeBy": "none"
@@ -884,6 +703,26 @@
           }
         ],
         "lineageTag": "11426dd1-a484-41ce-bd46-45e50cd04e36",
+        "measures": [
+          {
+            "name": "Montant_total_article",
+            "expression": "SUM('GOLD Ligne'[eMontTTCUCD])",
+            "formatString": "0",
+            "lineageTag": "765cc2a0-b12a-4d8e-92e7-c332701ef1cd"
+          },
+          {
+            "name": "Volume_article",
+            "expression": "sum('GOLD Ligne'[eQteInit])",
+            "formatString": "0",
+            "lineageTag": "b1457840-75c5-48c1-abfa-b5b114d78688"
+          },
+          {
+            "name": "count_nb_id",
+            "expression": "COUNT('GOLD Ligne'[ID_Ligne])",
+            "formatString": "0",
+            "lineageTag": "ddddd2af-525f-4526-9e10-f2169fd69369"
+          }
+        ],
         "partitions": [
           {
             "name": "GOLD Ligne",
@@ -894,9 +733,12 @@
                 "    Source = Sql.Databases(\"dwh-almaviva-group-uat.database.windows.net\"),",
                 "    #\"DATAMART-ACHATS\" = Source{[Name=\"DATAMART-ACHATS\"]}[Data],",
                 "    GOLD_Ligne = #\"DATAMART-ACHATS\"{[Schema=\"GOLD\",Item=\"Ligne\"]}[Data],",
-                "    #\"Type modifié\" = Table.TransformColumnTypes(GOLD_Ligne,{{\"eDateCreation\", type datetime}})",
+                "    #\"Type modifié\" = Table.TransformColumnTypes(GOLD_Ligne,{{\"eDateCreation\", type datetime}}),",
+                "    #\"Valeur remplacée\" = Table.ReplaceValue(#\"Type modifié\",\".\",\",\",Replacer.ReplaceText,{\"eMontTTCUCD\"}),",
+                "    #\"Valeur remplacée1\" = Table.ReplaceValue(#\"Valeur remplacée\",\".\",\",\",Replacer.ReplaceText,{\"eQteInit\"}),",
+                "    #\"Type modifié1\" = Table.TransformColumnTypes(#\"Valeur remplacée1\",{{\"eQteInit\", Int64.Type}})",
                 "in",
-                "    #\"Type modifié\""
+                "    #\"Type modifié1\""
               ],
               "type": "m"
             }
@@ -921,12 +763,12 @@
             "annotations": [
               {
                 "name": "SummarizationSetBy",
-                "value": "User"
+                "value": "Automatic"
               }
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "b4f8dcfe-65a8-48eb-8568-fe63bdc67f95",
+            "lineageTag": "cbe34f5f-610d-4cc6-b316-2d514875efb7",
             "sourceColumn": "ID_Article",
             "summarizeBy": "none"
           },
@@ -939,7 +781,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "95e7156f-c840-4ed0-9d96-6fd9c0848fae",
+            "lineageTag": "71136b12-2df7-404d-93cf-bae2674c5c72",
             "sourceColumn": "eIdArticle",
             "summarizeBy": "none"
           },
@@ -952,7 +794,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "b4088686-5ee1-42c6-9d79-b96e11598060",
+            "lineageTag": "333d5876-6eac-4424-a927-d819a9a53538",
             "sourceColumn": "sLibelleCourt",
             "summarizeBy": "none"
           },
@@ -961,12 +803,12 @@
             "annotations": [
               {
                 "name": "SummarizationSetBy",
-                "value": "User"
+                "value": "Automatic"
               }
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "5038c50d-bf6a-45be-800e-b778f87842e5",
+            "lineageTag": "894414e2-2832-4320-ac8a-50000e3137a4",
             "sourceColumn": "ID_Produit",
             "summarizeBy": "none"
           },
@@ -979,7 +821,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "fbcf3a59-d3ea-4406-b475-8191ee2d5982",
+            "lineageTag": "9466f015-0b62-41e1-a991-abd03241470b",
             "sourceColumn": "eDPxNegocieTTCUCD",
             "summarizeBy": "none"
           },
@@ -992,7 +834,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "c31a9063-26c9-4feb-9865-1d0b45cef568",
+            "lineageTag": "b19eb69a-760c-4c80-9eb1-8427f37add26",
             "sourceColumn": "eIDLaboratoire",
             "summarizeBy": "none"
           },
@@ -1005,7 +847,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "fb2fdef5-deee-451e-9858-d9ea2bb14c98",
+            "lineageTag": "3edeca38-339b-4273-8631-7b21c95ab45c",
             "sourceColumn": "sRaisonSocialeBCB",
             "summarizeBy": "none"
           },
@@ -1018,7 +860,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "d823b881-cdf4-4be0-85e8-d2db92f98113",
+            "lineageTag": "f2229b44-f80f-4936-8186-fc6b4b58da29",
             "sourceColumn": "sLibelleMarche",
             "summarizeBy": "none"
           },
@@ -1031,7 +873,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "1ca41743-6e1a-422f-97b4-c6d1dbd74543",
+            "lineageTag": "ab2a4bf2-adb9-4f1f-82a1-82392a0d8368",
             "sourceColumn": "eDateModif",
             "summarizeBy": "none"
           },
@@ -1044,7 +886,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "f407c8d7-d24c-4239-b938-485a892b1fdd",
+            "lineageTag": "0b169864-5fdd-46d4-a726-7f354e63d13d",
             "sourceColumn": "eDateCreation",
             "summarizeBy": "none"
           },
@@ -1057,7 +899,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "f03f5f9a-6c44-4411-a4c6-04a2c9b99572",
+            "lineageTag": "ff6b3102-23af-442a-ab06-09f271cf249b",
             "sourceColumn": "eIdMarche",
             "summarizeBy": "none"
           },
@@ -1069,11 +911,10 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "e5ac9bc2-00d6-42ac-826d-430ca9e869af",
+            "dataType": "string",
+            "lineageTag": "bef6f5d0-97be-4e50-8515-947bcb79dd0f",
             "sourceColumn": "sCodeLPPLaboratoire",
-            "summarizeBy": "sum"
+            "summarizeBy": "none"
           },
           {
             "name": "eIdEtablissement",
@@ -1084,7 +925,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "ab2eb87c-ef01-410e-b761-512565ad2311",
+            "lineageTag": "645a472d-2ec9-4b5d-93d2-3e1b2b7ef76a",
             "sourceColumn": "eIdEtablissement",
             "summarizeBy": "none"
           },
@@ -1097,14 +938,12 @@
               }
             ],
             "dataType": "string",
-            "expression": "IF('GOLD Article'[sCodeLPPLaboratoire]=0,\"Hors LPP\",\"Inclus\")",
-            "isDataTypeInferred": true,
-            "lineageTag": "2b633ea9-e54f-45d7-ba91-146c5d658796",
-            "summarizeBy": "none",
-            "type": "calculated"
+            "lineageTag": "b4ef2a82-5b64-4ec5-9ecd-a6b70708b589",
+            "sourceColumn": "LPP",
+            "summarizeBy": "none"
           }
         ],
-        "lineageTag": "2b891b78-b2e3-439c-8e28-665b002a1306",
+        "lineageTag": "05856915-2f5c-43e3-b825-220323773e89",
         "partitions": [
           {
             "name": "GOLD Article",
@@ -1115,220 +954,14 @@
                 "    Source = Sql.Databases(\"dwh-almaviva-group-uat.database.windows.net\"),",
                 "    #\"DATAMART-ACHATS\" = Source{[Name=\"DATAMART-ACHATS\"]}[Data],",
                 "    GOLD_Article = #\"DATAMART-ACHATS\"{[Schema=\"GOLD\",Item=\"Article\"]}[Data],",
-                "    #\"Type modifié\" = Table.TransformColumnTypes(GOLD_Article,{{\"sCodeLPPLaboratoire\", Int64.Type}})",
+                "    #\"Colonne conditionnelle ajoutée\" = Table.AddColumn(GOLD_Article, \"LPP\", each if [sCodeLPPLaboratoire] = null then \"Hors LPP\" else if [sCodeLPPLaboratoire] = \"0\" then \"Hors LPP\" else if [sCodeLPPLaboratoire] = \"\" then \"Hors LPP\" else \"Inclus\")",
                 "in",
-                "    #\"Type modifié\""
+                "    #\"Colonne conditionnelle ajoutée\""
               ],
               "type": "m"
             }
           }
         ]
-      },
-      {
-        "name": "LocalDateTable_bc23968f-8e56-4a49-be53-058ac1bf290e",
-        "annotations": [
-          {
-            "name": "__PBI_LocalDateTable",
-            "value": "true"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Date",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataCategory": "PaddedDateTableDates",
-            "dataType": "dateTime",
-            "formatString": "General Date",
-            "isHidden": true,
-            "isNameInferred": true,
-            "lineageTag": "2ca536ec-2d81-476b-b2c1-4bc613e419c4",
-            "sourceColumn": "[Date]",
-            "summarizeBy": "none",
-            "type": "calculatedTableColumn"
-          },
-          {
-            "name": "Année",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Year"
-              }
-            ],
-            "dataCategory": "Years",
-            "dataType": "int64",
-            "expression": "YEAR([Date])",
-            "formatString": "0",
-            "isHidden": true,
-            "lineageTag": "5c51c8a0-c1a4-4ba9-867c-28cf0b6a4d24",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "NoMois",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "MonthNumber"
-              }
-            ],
-            "dataCategory": "MonthOfYear",
-            "dataType": "int64",
-            "expression": "MONTH([Date])",
-            "formatString": "0",
-            "isHidden": true,
-            "lineageTag": "245e6706-97f7-4518-925f-6f5cd568d280",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Mois",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Month"
-              }
-            ],
-            "dataCategory": "Months",
-            "dataType": "string",
-            "expression": "FORMAT([Date], \"MMMM\")",
-            "isHidden": true,
-            "lineageTag": "f38bb9d9-3bff-4877-a3aa-251b09df4d2c",
-            "sortByColumn": "NoMois",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "NoTrimestre",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "QuarterNumber"
-              }
-            ],
-            "dataCategory": "QuarterOfYear",
-            "dataType": "int64",
-            "expression": "INT(([NoMois] + 2) / 3)",
-            "formatString": "0",
-            "isHidden": true,
-            "lineageTag": "fa245ecd-4342-4adf-896d-7094628b6544",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Trimestre",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Quarter"
-              }
-            ],
-            "dataCategory": "Quarters",
-            "dataType": "string",
-            "expression": "\"Trim \" & [NoTrimestre]",
-            "isHidden": true,
-            "lineageTag": "b363fab5-d55a-45e0-bce3-f5f7514ee326",
-            "sortByColumn": "NoTrimestre",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Jour",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Day"
-              }
-            ],
-            "dataCategory": "DayOfMonth",
-            "dataType": "int64",
-            "expression": "DAY([Date])",
-            "formatString": "0",
-            "isHidden": true,
-            "lineageTag": "663271c8-4f5c-4cc9-9052-74ecb08b64f8",
-            "summarizeBy": "none",
-            "type": "calculated"
-          }
-        ],
-        "hierarchies": [
-          {
-            "name": "Hiérarchie de dates",
-            "annotations": [
-              {
-                "name": "TemplateId",
-                "value": "DateHierarchy"
-              }
-            ],
-            "levels": [
-              {
-                "name": "Année",
-                "column": "Année",
-                "lineageTag": "ba4849d5-f4d2-4c87-8e25-bb8811e96695",
-                "ordinal": 0
-              },
-              {
-                "name": "Trimestre",
-                "column": "Trimestre",
-                "lineageTag": "c6535ed7-ce70-46a3-9d3e-de90e46db8be",
-                "ordinal": 1
-              },
-              {
-                "name": "Mois",
-                "column": "Mois",
-                "lineageTag": "59c2102a-4ba2-4c46-8531-99ad340d14d1",
-                "ordinal": 2
-              },
-              {
-                "name": "Jour",
-                "column": "Jour",
-                "lineageTag": "6879a979-694f-4c3e-bccf-eb91600ec30b",
-                "ordinal": 3
-              }
-            ],
-            "lineageTag": "edb25524-906c-48bf-99b4-ee0f8f55798d"
-          }
-        ],
-        "isHidden": true,
-        "lineageTag": "1a108269-7d29-465a-83fe-3cb3b35aedf6",
-        "partitions": [
-          {
-            "name": "LocalDateTable_bc23968f-8e56-4a49-be53-058ac1bf290e",
-            "mode": "import",
-            "source": {
-              "expression": "Calendar(Date(Year(MIN('GOLD Ligne'[eDateCreation])), 1, 1), Date(Year(MAX('GOLD Ligne'[eDateCreation])), 12, 31))",
-              "type": "calculated"
-            }
-          }
-        ],
-        "showAsVariationsOnly": true
       },
       {
         "name": "GOLD Compte",
@@ -1343,7 +976,7 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "385f901e-b798-44ca-9497-eaaf2a061d56",
+            "lineageTag": "a7c0ff0e-7cf5-40e4-b955-5ef5c0d50021",
             "sourceColumn": "ID_Compte",
             "summarizeBy": "none"
           },
@@ -1356,7 +989,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "b80012a5-49df-4850-821b-2cdec3f946b0",
+            "lineageTag": "183a0963-71c8-4fe6-aeb5-360c88516e8b",
             "sourceColumn": "eIdCompte",
             "summarizeBy": "none"
           },
@@ -1369,12 +1002,12 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "f30aad1d-19f5-47c8-a64c-6a00c6691a12",
+            "lineageTag": "103de8a7-d47e-4e6f-94bd-d176a6c6283a",
             "sourceColumn": "sLibelleCompte",
             "summarizeBy": "none"
           }
         ],
-        "lineageTag": "7d3b827e-15ab-403a-9af5-46c949fb1876",
+        "lineageTag": "2896768d-a7f3-441a-a5ce-011da1818674",
         "partitions": [
           {
             "name": "GOLD Compte",
@@ -1406,7 +1039,7 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "2f922d84-b150-4ca3-8416-9609c6b4ea56",
+            "lineageTag": "35bede1e-3892-454d-bb26-25fe30c5d453",
             "sourceColumn": "ID_Etablissement",
             "summarizeBy": "none"
           },
@@ -1419,7 +1052,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "0b45e24b-eaee-4786-b06e-7af5c6f76195",
+            "lineageTag": "61428eec-a963-49cc-a25e-d2d17de850e7",
             "sourceColumn": "eIdEtablissement",
             "summarizeBy": "none"
           },
@@ -1432,7 +1065,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "b6870765-8ba0-4380-847d-f16fd04f1df0",
+            "lineageTag": "229b97d4-9c57-4153-bd47-1cfc7b42bd14",
             "sourceColumn": "eIdTypeEtablissement",
             "summarizeBy": "none"
           },
@@ -1445,7 +1078,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "b2cf78a3-a016-483d-a684-968e9e968bc3",
+            "lineageTag": "7851eba1-b80f-48a8-a15c-fcc5971c4e6b",
             "sourceColumn": "sLibelleTypeEtablissement",
             "summarizeBy": "none"
           },
@@ -1458,7 +1091,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "4ffa33c0-dd30-4853-9b92-40d8f09e8dd4",
+            "lineageTag": "7509d584-b7c9-4864-8f00-f7d83729f739",
             "sourceColumn": "sNomEtablissement",
             "summarizeBy": "none"
           },
@@ -1471,7 +1104,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "b107c74d-b0da-45b2-9367-eef60c396dc8",
+            "lineageTag": "54e49346-bcf1-440b-ab3f-36d70df3fdbd",
             "sourceColumn": "New_NumFiness",
             "summarizeBy": "none"
           },
@@ -1484,7 +1117,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "d3aefa99-80f5-4c34-ab6f-fa018b026a66",
+            "lineageTag": "b899cbac-66c5-458c-883e-3bfa02ec1a7d",
             "sourceColumn": "Code",
             "summarizeBy": "none"
           },
@@ -1497,7 +1130,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "1e5eec33-32be-46cb-8584-449537c50891",
+            "lineageTag": "437e3880-a08c-447a-bf85-c27cc837b702",
             "sourceColumn": "ALM_CODE",
             "summarizeBy": "none"
           },
@@ -1510,7 +1143,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "21dd54ae-a080-45e0-bfbf-d3de0f00dd52",
+            "lineageTag": "fb4d86b1-3166-482d-a17b-bc88bd8dd2dc",
             "sourceColumn": "Région",
             "summarizeBy": "none"
           },
@@ -1523,7 +1156,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "61bfb44f-2cd9-4804-bd4f-ac8065eba2e8",
+            "lineageTag": "db707e64-fd51-4b69-84b5-9e82c49222e2",
             "sourceColumn": "Nom",
             "summarizeBy": "none"
           },
@@ -1536,7 +1169,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "56b5ed4e-9aae-4935-bab9-2a8debbdcf2a",
+            "lineageTag": "5c531997-4fc1-4798-9dc8-65c6733e8c50",
             "sourceColumn": "Nom_CTI",
             "summarizeBy": "none"
           },
@@ -1549,14 +1182,14 @@
               }
             ],
             "dataType": "string",
-            "expression": "CONCATENATE('GOLD Etablissement'[ALM_CODE],CONCATENATE(\" \",'GOLD Etablissement'[sNomEtablissement]))",
+            "expression": "CONCATENATE('GOLD Etablissement'[ALM_CODE], CONCATENATE(\" \", 'GOLD Etablissement'[sNomEtablissement]))",
             "isDataTypeInferred": true,
-            "lineageTag": "9c31e133-7992-4115-82f0-33e5abdeba77",
+            "lineageTag": "6b9557b2-008f-4ce6-a861-dba76b5a885c",
             "summarizeBy": "none",
             "type": "calculated"
           }
         ],
-        "lineageTag": "c20f1b9f-5042-479a-b9f2-89112617fb74",
+        "lineageTag": "37ab72f7-a7de-415d-abd2-ae15d77d1594",
         "partitions": [
           {
             "name": "GOLD Etablissement",
@@ -1588,7 +1221,7 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "900674a4-8599-4005-abca-36ed92f6ceba",
+            "lineageTag": "a4a5e3eb-3fa1-4d69-9400-89a57ae39398",
             "sourceColumn": "ID_Produit",
             "summarizeBy": "none"
           },
@@ -1601,7 +1234,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "931d5b95-d9cc-47e2-8a56-3e74806e7966",
+            "lineageTag": "628f8671-1e9e-4949-9a0d-ba1a9a16c0de",
             "sourceColumn": "eIdProduit",
             "summarizeBy": "none"
           },
@@ -1614,7 +1247,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "738bd1e4-a8e4-42be-afec-ef197f6920f2",
+            "lineageTag": "d7ab823f-30c4-4949-8e3c-ef2a21aada5d",
             "sourceColumn": "sLibelleCourt",
             "summarizeBy": "none"
           },
@@ -1627,7 +1260,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "6cfab1c8-b9bf-4dc3-a757-1db706d9f7c9",
+            "lineageTag": "63e526e4-0df0-4abc-a75c-63c06d7f240f",
             "sourceColumn": "eDateCreation",
             "summarizeBy": "none"
           },
@@ -1640,7 +1273,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "abe364d0-645c-448c-881d-8861920df3bf",
+            "lineageTag": "bec8d8c2-bd4a-42e0-b4f3-cb28df4ba59d",
             "sourceColumn": "eDateModif",
             "summarizeBy": "none"
           },
@@ -1653,7 +1286,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "6a23f06f-1cda-4d06-a944-6a9699176f57",
+            "lineageTag": "97ceddee-11b5-4ae0-a14d-9bdab72889bf",
             "sourceColumn": "eIdTypeProduit",
             "summarizeBy": "none"
           },
@@ -1666,7 +1299,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "ed991145-d77c-4526-97c4-b112570839fb",
+            "lineageTag": "421329d3-3897-4441-8734-73072f7027b9",
             "sourceColumn": "eTypeClasse",
             "summarizeBy": "none"
           },
@@ -1679,7 +1312,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "fb55feca-a21a-4337-8383-9fe2e47b8d24",
+            "lineageTag": "6474c218-f158-42d8-8a44-0f03abd6d222",
             "sourceColumn": "sNomType",
             "summarizeBy": "none"
           },
@@ -1692,12 +1325,12 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "1219d340-ba5a-477c-b56e-68b89f7348cb",
+            "lineageTag": "2e1a714c-8835-47ad-9541-5486dae90d98",
             "sourceColumn": "sCodeTypeProduit",
             "summarizeBy": "none"
           }
         ],
-        "lineageTag": "d28b96cc-cafc-42f5-bef5-bda3af3469f9",
+        "lineageTag": "2788e5fc-6934-4bb4-8c5f-4cb773d8f29f",
         "partitions": [
           {
             "name": "GOLD Produit",
@@ -1729,7 +1362,7 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "cd6d0db0-daa2-4c8f-a705-21263fc5bf57",
+            "lineageTag": "47801d2c-b3c9-4803-8317-01fd2fa62081",
             "sourceColumn": "ID_Utilisateur",
             "summarizeBy": "none"
           },
@@ -1742,7 +1375,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "7f6d8928-7216-427d-a7fc-ba90cc7c2046",
+            "lineageTag": "fe75ea70-30a8-4e2c-b4fb-acb1f5a0420b",
             "sourceColumn": "eIdUtilisateur",
             "summarizeBy": "none"
           },
@@ -1755,7 +1388,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "5e3ecc4f-ec9b-4bae-adc3-409e48dc847f",
+            "lineageTag": "6ee04bce-4a76-41f3-b72b-ba62093f021e",
             "sourceColumn": "sNomUtilisateur",
             "summarizeBy": "none"
           },
@@ -1768,12 +1401,12 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "6144c44c-d5b1-42ed-85c1-848f665ebbe4",
+            "lineageTag": "a8d967f8-e0e6-4255-bdb4-a31107b41391",
             "sourceColumn": "sPrenomUtilisateur",
             "summarizeBy": "none"
           }
         ],
-        "lineageTag": "607b6f55-9a63-450b-8fe6-2456aa4f9138",
+        "lineageTag": "763867b1-0675-4e61-8bed-2a67f90609fc",
         "partitions": [
           {
             "name": "GOLD Utilisateur",
@@ -1793,11 +1426,11 @@
         ]
       },
       {
-        "name": "Dates_Lignes",
+        "name": "Dates_lignes",
         "annotations": [
           {
             "name": "PBI_Id",
-            "value": "052be8943d6e44d785992c45d5f5b595"
+            "value": "9c07be30b997492c9591285b63bb6133"
           }
         ],
         "columns": [
@@ -1813,7 +1446,7 @@
             "formatString": "General Date",
             "isDataTypeInferred": true,
             "isNameInferred": true,
-            "lineageTag": "91d76bca-1615-4da7-8d12-cf3c232cd321",
+            "lineageTag": "5ae7eec2-ea19-4436-b68d-7b2b601ce8fd",
             "sourceColumn": "[Date]",
             "summarizeBy": "none",
             "type": "calculatedTableColumn",
@@ -1822,18 +1455,18 @@
                 "name": "Variation",
                 "defaultHierarchy": {
                   "hierarchy": "Hiérarchie de dates",
-                  "table": "LocalDateTable_0c38a5aa-b677-4989-b1dc-0583d67a6875"
+                  "table": "LocalDateTable_43268c74-f44f-4d01-8a9e-0a7034cf8c7d"
                 },
                 "isDefault": true,
-                "relationship": "f1ae06c3-1df3-4fdb-9c85-98329700b112"
+                "relationship": "ff837ca1-d294-49e1-97c4-73e23b2166bf"
               }
             ]
           }
         ],
-        "lineageTag": "3dad4feb-de39-4d0a-8b52-1d8e45926556",
+        "lineageTag": "c340728f-a4d7-4262-9940-324b693c4af7",
         "partitions": [
           {
-            "name": "Dates_Lignes",
+            "name": "Dates_lignes",
             "mode": "import",
             "source": {
               "expression": "CALENDAR(MIN('GOLD Ligne'[eDateCreation]), MAX('GOLD Ligne'[eDateCreation]))",
@@ -1843,7 +1476,7 @@
         ]
       },
       {
-        "name": "LocalDateTable_0c38a5aa-b677-4989-b1dc-0583d67a6875",
+        "name": "LocalDateTable_43268c74-f44f-4d01-8a9e-0a7034cf8c7d",
         "annotations": [
           {
             "name": "__PBI_LocalDateTable",
@@ -1864,7 +1497,7 @@
             "formatString": "General Date",
             "isHidden": true,
             "isNameInferred": true,
-            "lineageTag": "098725a3-4c5c-4c01-b2ed-799bb47b220e",
+            "lineageTag": "566f0e70-7463-4d42-8a88-2ce7df0ff121",
             "sourceColumn": "[Date]",
             "summarizeBy": "none",
             "type": "calculatedTableColumn"
@@ -1886,7 +1519,7 @@
             "expression": "YEAR([Date])",
             "formatString": "0",
             "isHidden": true,
-            "lineageTag": "c9c9b0fb-c7b1-4626-9137-21b8000cca12",
+            "lineageTag": "4232104b-3f17-4c0a-b423-da09c1f2a3e0",
             "summarizeBy": "none",
             "type": "calculated"
           },
@@ -1907,7 +1540,7 @@
             "expression": "MONTH([Date])",
             "formatString": "0",
             "isHidden": true,
-            "lineageTag": "709aa0e0-0405-4e64-8e2d-975e287de73a",
+            "lineageTag": "e89acd14-606d-4c7a-a024-18436b14da97",
             "summarizeBy": "none",
             "type": "calculated"
           },
@@ -1927,7 +1560,7 @@
             "dataType": "string",
             "expression": "FORMAT([Date], \"MMMM\")",
             "isHidden": true,
-            "lineageTag": "720036ba-263b-493b-b726-a62d4c0109db",
+            "lineageTag": "4f036e21-4fef-402c-a273-164d50193814",
             "sortByColumn": "NoMois",
             "summarizeBy": "none",
             "type": "calculated"
@@ -1949,7 +1582,7 @@
             "expression": "INT(([NoMois] + 2) / 3)",
             "formatString": "0",
             "isHidden": true,
-            "lineageTag": "909a94cb-8dcd-43c7-b3dc-a8a14570fa64",
+            "lineageTag": "e5ab8a7a-8367-4c27-a9f5-44dc720252c8",
             "summarizeBy": "none",
             "type": "calculated"
           },
@@ -1969,7 +1602,7 @@
             "dataType": "string",
             "expression": "\"Trim \" & [NoTrimestre]",
             "isHidden": true,
-            "lineageTag": "90e6fd7b-eb6b-4aa3-aa7f-a804fd8ddfd2",
+            "lineageTag": "99eecbcd-6b64-4a16-a11f-730ead15006e",
             "sortByColumn": "NoTrimestre",
             "summarizeBy": "none",
             "type": "calculated"
@@ -1991,7 +1624,7 @@
             "expression": "DAY([Date])",
             "formatString": "0",
             "isHidden": true,
-            "lineageTag": "1ff4f129-7f7e-4154-9268-948129fa6c14",
+            "lineageTag": "c7e71859-4a79-4bb5-8586-61461b4ecf5d",
             "summarizeBy": "none",
             "type": "calculated"
           }
@@ -2009,44 +1642,83 @@
               {
                 "name": "Année",
                 "column": "Année",
-                "lineageTag": "a851a959-f364-407d-95a6-4d62ea56bd9e",
+                "lineageTag": "df5a9465-4819-488c-bf7d-e1c6b0f3cc83",
                 "ordinal": 0
               },
               {
                 "name": "Trimestre",
                 "column": "Trimestre",
-                "lineageTag": "4c4357ed-78a4-4035-bae2-7c92a51e1d25",
+                "lineageTag": "7b2b2123-9f1c-4391-a54f-83ce34df471d",
                 "ordinal": 1
               },
               {
                 "name": "Mois",
                 "column": "Mois",
-                "lineageTag": "82622682-67b0-4d43-ae7c-120bac28db02",
+                "lineageTag": "ffd31a60-530a-49f6-8bf5-5e87ea744f35",
                 "ordinal": 2
               },
               {
                 "name": "Jour",
                 "column": "Jour",
-                "lineageTag": "6c2134e3-8d30-42ff-a0c9-9dca97eafdfc",
+                "lineageTag": "a3c6ecb9-6977-44a1-b1bf-ffd71070001c",
                 "ordinal": 3
               }
             ],
-            "lineageTag": "c6edeee4-3639-4b8c-af27-e19df8b584f4"
+            "lineageTag": "72bc28a5-ffc6-47d8-90da-e2101ef54b58"
           }
         ],
         "isHidden": true,
-        "lineageTag": "db2fcfa5-5d94-4609-8d01-34916a420f1c",
+        "lineageTag": "861782c9-b685-40f2-a75c-471aa6af28f3",
         "partitions": [
           {
-            "name": "LocalDateTable_0c38a5aa-b677-4989-b1dc-0583d67a6875",
+            "name": "LocalDateTable_43268c74-f44f-4d01-8a9e-0a7034cf8c7d",
             "mode": "import",
             "source": {
-              "expression": "Calendar(Date(Year(MIN('Dates_Lignes'[Date])), 1, 1), Date(Year(MAX('Dates_Lignes'[Date])), 12, 31))",
+              "expression": "Calendar(Date(Year(MIN('Dates_lignes'[Date])), 1, 1), Date(Year(MAX('Dates_lignes'[Date])), 12, 31))",
               "type": "calculated"
             }
           }
         ],
         "showAsVariationsOnly": true
+      },
+      {
+        "name": "Paramètre",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "20bcc773c97f4801b42a99a73f8b7a00"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Value",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "7bf55b11-863d-4212-ac03-c9cb1407adfd",
+            "sourceColumn": "[Value]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "lineageTag": "80632729-0f49-448e-b251-cef7db9e426c",
+        "partitions": [
+          {
+            "name": "Paramètre",
+            "mode": "import",
+            "source": {
+              "expression": "GENERATESERIES(1, 100, 1)",
+              "type": "calculated"
+            }
+          }
+        ]
       }
     ]
   }

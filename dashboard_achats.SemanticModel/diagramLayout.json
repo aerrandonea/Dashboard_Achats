@@ -5,55 +5,42 @@
       "ordinal": 0,
       "scrollPosition": {
         "x": 0,
-        "y": 1.1685499077497752
+        "y": 0
       },
       "nodes": [
         {
           "location": {
-            "x": 1448.5095374660591,
-            "y": 68.360169603361825
+            "x": 699.16511517242986,
+            "y": 66.076155065985787
           },
-          "nodeIndex": "Paramètre",
-          "nodeLineageTag": "36f73dfd-753a-4ee5-89bf-e6598c39e321",
+          "nodeIndex": "GOLD Ligne",
+          "nodeLineageTag": "11426dd1-a484-41ce-bd46-45e50cd04e36",
           "size": {
-            "height": 224,
-            "width": 234
-          },
-          "zIndex": 2
-        },
-        {
-          "location": {
-            "x": 1015.4400952431389,
-            "y": 243.15145648750428
-          },
-          "nodeIndex": "GOLD Article",
-          "nodeLineageTag": "2b891b78-b2e3-439c-8e28-665b002a1306",
-          "size": {
-            "height": 448.21885072752423,
-            "width": 234
+            "height": 873.57253324508281,
+            "width": 304.11299446498651
           },
           "zIndex": 1
         },
         {
           "location": {
-            "x": 551.75833712873941,
-            "y": 157.51389828937928
+            "x": 1162.9190202950494,
+            "y": 548.25059553958
           },
-          "nodeIndex": "GOLD Ligne",
-          "nodeLineageTag": "11426dd1-a484-41ce-bd46-45e50cd04e36",
+          "nodeIndex": "GOLD Article",
+          "nodeLineageTag": "05856915-2f5c-43e3-b825-220323773e89",
           "size": {
-            "height": 766.06594173210351,
+            "height": 565.26082905919907,
             "width": 234
           },
-          "zIndex": 3
+          "zIndex": 0
         },
         {
           "location": {
-            "x": 153.15947908510825,
-            "y": 281.60320545996819
+            "x": 0,
+            "y": 149.6923274832161
           },
           "nodeIndex": "GOLD Compte",
-          "nodeLineageTag": "7d3b827e-15ab-403a-9af5-46c949fb1876",
+          "nodeLineageTag": "2896768d-a7f3-441a-a5ce-011da1818674",
           "size": {
             "height": 152,
             "width": 234
@@ -62,37 +49,37 @@
         },
         {
           "location": {
-            "x": 989.72302391885773,
-            "y": 890.60337864249129
+            "x": 1259.7391729710623,
+            "y": 0
           },
           "nodeIndex": "GOLD Etablissement",
-          "nodeLineageTag": "c20f1b9f-5042-479a-b9f2-89112617fb74",
+          "nodeLineageTag": "37ab72f7-a7de-415d-abd2-ae15d77d1594",
           "size": {
-            "height": 367.77589464948687,
+            "height": 414.51789095947794,
             "width": 234
           },
           "zIndex": 0
         },
         {
           "location": {
-            "x": 1472.1349894378973,
-            "y": 418.75647259769664
+            "x": 1596.3239188198022,
+            "y": 799.85617047257722
           },
           "nodeIndex": "GOLD Produit",
-          "nodeLineageTag": "d28b96cc-cafc-42f5-bef5-bda3af3469f9",
+          "nodeLineageTag": "2788e5fc-6934-4bb4-8c5f-4cb773d8f29f",
           "size": {
-            "height": 569.44067841344747,
+            "height": 296,
             "width": 234
           },
           "zIndex": 0
         },
         {
           "location": {
-            "x": 3.2937522383894162,
-            "y": 1050.2224859582618
+            "x": 31.677964759657812,
+            "y": 762.86652812934585
           },
           "nodeIndex": "GOLD Utilisateur",
-          "nodeLineageTag": "607b6f55-9a63-450b-8fe6-2456aa4f9138",
+          "nodeLineageTag": "763867b1-0675-4e61-8bed-2a67f90609fc",
           "size": {
             "height": 176,
             "width": 234
@@ -101,10 +88,23 @@
         },
         {
           "location": {
-            "x": 1752.8412371995078,
-            "y": 517.79627504542873
+            "x": 270.062145940612,
+            "y": 0
           },
-          "nodeIndex": "Dates_Lignes",
+          "nodeIndex": "Dates_lignes",
+          "nodeLineageTag": "c340728f-a4d7-4262-9940-324b693c4af7",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1880.3239188198022,
+            "y": 456.75571229938953
+          },
+          "nodeIndex": "Paramètre",
           "size": {
             "height": 200,
             "width": 234
