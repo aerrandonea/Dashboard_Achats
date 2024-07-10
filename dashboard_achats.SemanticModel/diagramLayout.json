@@ -5,7 +5,7 @@
       "ordinal": 0,
       "scrollPosition": {
         "x": 0,
-        "y": 0
+        "y": 38.562146955742584
       },
       "nodes": [
         {
@@ -105,6 +105,19 @@
             "y": 456.75571229938953
           },
           "nodeIndex": "Paramètre",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1605.7570629154097,
+            "y": 1126.3348094400108
+          },
+          "nodeIndex": "Dates_Articles",
+          "nodeLineageTag": "302ada62-bba9-48d5-865c-1c70eeccd201",
           "size": {
             "height": 200,
             "width": 234
