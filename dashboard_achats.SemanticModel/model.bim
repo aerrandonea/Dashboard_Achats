@@ -1485,6 +1485,135 @@
                   }
                 ]
               },
+              "GOLD_etablissement.code_region": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "GOLD Etablissement",
+                    "ConceptualProperty": "code_region"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "code region": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "code_region": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "region": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "code location": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.833
+                    }
+                  },
+                  {
+                    "location": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.818
+                    }
+                  },
+                  {
+                    "code province": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "province": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "code area": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "code district": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "code section": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "code zone": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "code continent": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "area": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  }
+                ]
+              },
               "GOLD_etablissement.e_id_etablissement": {
                 "Definition": {
                   "Binding": {
@@ -1922,6 +2051,52 @@
                   {
                     "GOLD ligne": {
                       "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "GOLD_ligne.Evolution_Montant_": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "GOLD Ligne",
+                    "ConceptualProperty": "Evolution_Montant_%"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Evolution_Montant_%": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "evolution_montant_ percentage": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "evolution_montant_ pct": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "Evol %": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   }
                 ]
@@ -3695,6 +3870,29 @@
                   }
                 ]
               },
+              "GOLD_ligne.evol_montant": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "GOLD Ligne",
+                    "ConceptualProperty": "Evol_Montant"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "evol montant": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Evol_Montant": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
               "GOLD_ligne.evolution_volume": {
                 "Definition": {
                   "Binding": {
@@ -3951,6 +4149,69 @@
                       "Type": "Noun",
                       "Weight": 0.482
                     }
+                  },
+                  {
+                    "Mt TTC N": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "GOLD_ligne.montant_total_article_N_1": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "GOLD Ligne",
+                    "ConceptualProperty": "Montant_total_article_N-1"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "montant total article N 1": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Montant_total_article_N-1": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "montant aggregate article n 1": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.605
+                    }
+                  },
+                  {
+                    "montant overall article n 1": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.605
+                    }
+                  },
+                  {
+                    "Mt TTC N-1": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
                   }
                 ]
               },
@@ -4033,6 +4294,99 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.599
+                    }
+                  },
+                  {
+                    "Pos.": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "GOLD_ligne.rank_top_N_fournisseur_montant": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "GOLD Ligne",
+                    "ConceptualProperty": "Rank_TopN_fournisseur_montant"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "rank top N fournisseur montant": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Rank_TopN_fournisseur_montant": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "rank best n fournisseur montant": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.605
+                    }
+                  },
+                  {
+                    "rank first n fournisseur montant": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.605
+                    }
+                  },
+                  {
+                    "rank leading n fournisseur montant": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.605
+                    }
+                  },
+                  {
+                    "rank maximum n fournisseur montant": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.605
+                    }
+                  },
+                  {
+                    "rank peak n fournisseur montant": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.605
+                    }
+                  },
+                  {
+                    "rank upper n fournisseur montant": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.605
                     }
                   },
                   {
@@ -5872,6 +6226,89 @@
                   }
                 ]
               },
+              "dates_ligne.label_date": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Dates_lignes",
+                    "ConceptualProperty": "label_date"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "label date": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "label_date": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "label moment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "label period": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "sticker date": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "tag date": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "decal date": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "name tag date": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.471
+                    }
+                  }
+                ]
+              },
               "entete.eetat": {
                 "Definition": {
                   "Binding": {
@@ -5883,27 +6320,6 @@
                 "Terms": [
                   {
                     "eEtatEntete": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  }
-                ]
-              },
-              "laboratoire.sraisonsocialebcb": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Laboratoire",
-                    "ConceptualProperty": "sRaisonSocialeBCB"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "Libellé Fournisseur": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -5944,16 +6360,6 @@
                 },
                 "State": "Generated",
                 "Terms": [
-                  {
-                    "Evol Montant": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  },
                   {
                     "Evol Valeur": {
                       "Source": {
@@ -6149,27 +6555,6 @@
                   "Binding": {
                     "ConceptualEntity": "Ligne",
                     "ConceptualProperty": "Rank_TopN_article_montant"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "Pos.": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  }
-                ]
-              },
-              "ligne.rank_topn_fournisseur_montant": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Ligne",
-                    "ConceptualProperty": "Rank_TopN_fournisseur_montant"
                   }
                 },
                 "State": "Generated",
@@ -7141,6 +7526,39 @@
                 },
                 "State": "Generated"
               },
+              "GOLD_etablissement_has_code_region": {
+                "Binding": {
+                  "ConceptualEntity": "GOLD Etablissement"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "GOLD_etablissement.code_region"
+                      },
+                      "Subject": {
+                        "Role": "GOLD_etablissement"
+                      }
+                    },
+                    "ID": "GOLD_etablissements_have_code_regions",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "GOLD_etablissement": {
+                    "Target": {
+                      "Entity": "GOLD_etablissement"
+                    }
+                  },
+                  "GOLD_etablissement.code_region": {
+                    "Target": {
+                      "Entity": "GOLD_etablissement.code_region"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "GOLD_etablissement_has_e_id_etablissement": {
                 "Binding": {
                   "ConceptualEntity": "GOLD Etablissement"
@@ -7400,6 +7818,84 @@
                   "GOLD_etablissement.s_nom_etablissement": {
                     "Target": {
                       "Entity": "GOLD_etablissement.s_nom_etablissement"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "GOLD_etablissement_in_code_region": {
+                "Binding": {
+                  "ConceptualEntity": "GOLD Etablissement"
+                },
+                "Phrasings": [
+                  {
+                    "ID": "GOLD_etablissements_are_in_code_regions",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "GOLD_etablissement.code_region"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "GOLD_etablissement"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "GOLD_etablissement": {
+                    "Target": {
+                      "Entity": "GOLD_etablissement"
+                    }
+                  },
+                  "GOLD_etablissement.code_region": {
+                    "Target": {
+                      "Entity": "GOLD_etablissement.code_region"
+                    }
+                  }
+                },
+                "SemanticSlots": {
+                  "Where": {
+                    "Role": "GOLD_etablissement.code_region"
+                  }
+                },
+                "State": "Generated"
+              },
+              "GOLD_ligne_has_Evolution_Montant_": {
+                "Binding": {
+                  "ConceptualEntity": "GOLD Ligne"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "GOLD_ligne.Evolution_Montant_"
+                      },
+                      "Subject": {
+                        "Role": "GOLD_ligne"
+                      }
+                    },
+                    "ID": "GOLD_lignes_have_Evolution_Montant_",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "GOLD_ligne": {
+                    "Target": {
+                      "Entity": "GOLD_ligne"
+                    }
+                  },
+                  "GOLD_ligne.Evolution_Montant_": {
+                    "Target": {
+                      "Entity": "GOLD_ligne.Evolution_Montant_"
                     }
                   }
                 },
@@ -8378,6 +8874,39 @@
                 },
                 "State": "Generated"
               },
+              "GOLD_ligne_has_evol_montant": {
+                "Binding": {
+                  "ConceptualEntity": "GOLD Ligne"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "GOLD_ligne.evol_montant"
+                      },
+                      "Subject": {
+                        "Role": "GOLD_ligne"
+                      }
+                    },
+                    "ID": "GOLD_lignes_have_evol_montant",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "GOLD_ligne": {
+                    "Target": {
+                      "Entity": "GOLD_ligne"
+                    }
+                  },
+                  "GOLD_ligne.evol_montant": {
+                    "Target": {
+                      "Entity": "GOLD_ligne.evol_montant"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "GOLD_ligne_has_evolution_volume": {
                 "Binding": {
                   "ConceptualEntity": "GOLD Ligne"
@@ -8477,6 +9006,39 @@
                 },
                 "State": "Generated"
               },
+              "GOLD_ligne_has_montant_total_article_N_1": {
+                "Binding": {
+                  "ConceptualEntity": "GOLD Ligne"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "GOLD_ligne.montant_total_article_N_1"
+                      },
+                      "Subject": {
+                        "Role": "GOLD_ligne"
+                      }
+                    },
+                    "ID": "GOLD_lignes_have_montant_total_article_N_1",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "GOLD_ligne": {
+                    "Target": {
+                      "Entity": "GOLD_ligne"
+                    }
+                  },
+                  "GOLD_ligne.montant_total_article_N_1": {
+                    "Target": {
+                      "Entity": "GOLD_ligne.montant_total_article_N_1"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "GOLD_ligne_has_rank_top_N_fournisseur": {
                 "Binding": {
                   "ConceptualEntity": "GOLD Ligne"
@@ -8505,6 +9067,39 @@
                   "GOLD_ligne.rank_top_N_fournisseur": {
                     "Target": {
                       "Entity": "GOLD_ligne.rank_top_N_fournisseur"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "GOLD_ligne_has_rank_top_N_fournisseur_montant": {
+                "Binding": {
+                  "ConceptualEntity": "GOLD Ligne"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "GOLD_ligne.rank_top_N_fournisseur_montant"
+                      },
+                      "Subject": {
+                        "Role": "GOLD_ligne"
+                      }
+                    },
+                    "ID": "GOLD_lignes_have_rank_top_N_fournisseur_montant",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "GOLD_ligne": {
+                    "Target": {
+                      "Entity": "GOLD_ligne"
+                    }
+                  },
+                  "GOLD_ligne.rank_top_N_fournisseur_montant": {
+                    "Target": {
+                      "Entity": "GOLD_ligne.rank_top_N_fournisseur_montant"
                     }
                   }
                 },
@@ -9434,6 +10029,39 @@
                 },
                 "State": "Generated"
               },
+              "dates_ligne_has_label_date": {
+                "Binding": {
+                  "ConceptualEntity": "Dates_lignes"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "dates_ligne.label_date"
+                      },
+                      "Subject": {
+                        "Role": "dates_ligne"
+                      }
+                    },
+                    "ID": "dates_lignes_have_label_date",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "dates_ligne": {
+                    "Target": {
+                      "Entity": "dates_ligne"
+                    }
+                  },
+                  "dates_ligne.label_date": {
+                    "Target": {
+                      "Entity": "dates_ligne.label_date"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "paramètre_has_value": {
                 "Binding": {
                   "ConceptualEntity": "Paramètre"
@@ -9926,12 +10554,16 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
               }
             ],
-            "dataType": "string",
+            "dataType": "double",
             "lineageTag": "6ddb9f83-56ae-4f4c-87d3-1df5f36aaae3",
             "sourceColumn": "eMontTTCUCD",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "eIdFabricant",
@@ -10149,7 +10781,7 @@
           {
             "name": "Montant_total_article",
             "expression": "SUM('GOLD Ligne'[eMontTTCUCD])",
-            "formatString": "0",
+            "formatString": "#,0",
             "lineageTag": "765cc2a0-b12a-4d8e-92e7-c332701ef1cd"
           },
           {
@@ -10194,6 +10826,42 @@
             "expression": "[Evolution_volume] / [Volume_article_N-1]",
             "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
             "lineageTag": "517dde09-382b-4115-93f9-9c7ab85a0112"
+          },
+          {
+            "name": "Rank_TopN_fournisseur_montant",
+            "expression": [
+              "",
+              "var _TopN = SELECTEDVALUE('Paramètre'[Value])",
+              "return",
+              "if(HASONEFILTER('GOLD Ligne'[Libelle_Fabricant]),",
+              "SWITCH(TRUE(),RANKX(ALLSELECTED('GOLD Ligne'[Libelle_Fabricant]),[Montant_total_article])<=_TopN,",
+              "RANKX(ALLSELECTED('GOLD Ligne'[Libelle_Fabricant]),[Montant_total_article])))"
+            ],
+            "formatString": "0",
+            "lineageTag": "5349281a-57bf-45f7-882f-91f958aafcee"
+          },
+          {
+            "name": "Montant_total_article_N-1",
+            "expression": "CALCULATE(SUM('GOLD Ligne'[eMontTTCUCD]),SAMEPERIODLASTYEAR(Dates_lignes[Date]))",
+            "formatString": "#,0",
+            "lineageTag": "828d585a-4308-4dd6-878f-21164607068c"
+          },
+          {
+            "name": "Evol_Montant",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "[Montant_total_article] - [Montant_total_article_N-1]",
+            "lineageTag": "7a2f2bca-8a0d-41e8-bd9e-0e5f63229979"
+          },
+          {
+            "name": "Evolution_Montant_%",
+            "expression": "[Evol_Montant] / [Montant_total_article_N-1]",
+            "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+            "lineageTag": "ff9aba58-79a0-4a38-ab5b-daab47d6856f"
           }
         ],
         "partitions": [
@@ -10209,7 +10877,7 @@
                 "    #\"Type modifié\" = Table.TransformColumnTypes(GOLD_Ligne,{{\"eDateCreation\", type datetime}}),",
                 "    #\"Valeur remplacée\" = Table.ReplaceValue(#\"Type modifié\",\".\",\",\",Replacer.ReplaceText,{\"eMontTTCUCD\"}),",
                 "    #\"Valeur remplacée1\" = Table.ReplaceValue(#\"Valeur remplacée\",\".\",\",\",Replacer.ReplaceText,{\"eQteInit\"}),",
-                "    #\"Type modifié1\" = Table.TransformColumnTypes(#\"Valeur remplacée1\",{{\"eQteInit\", Int64.Type}})",
+                "    #\"Type modifié1\" = Table.TransformColumnTypes(#\"Valeur remplacée1\",{{\"eQteInit\", Int64.Type}, {\"eMontTTCUCD\", type number}})",
                 "in",
                 "    #\"Type modifié1\""
               ],
@@ -10660,6 +11328,21 @@
             "lineageTag": "6b9557b2-008f-4ce6-a861-dba76b5a885c",
             "summarizeBy": "none",
             "type": "calculated"
+          },
+          {
+            "name": "code_region",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "CONCATENATE('GOLD Etablissement'[Région], CONCATENATE(\" - \", 'GOLD Etablissement'[sNomEtablissement]))",
+            "isDataTypeInferred": true,
+            "lineageTag": "98e041a9-0799-474e-89c3-41a0e750e41b",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "37ab72f7-a7de-415d-abd2-ae15d77d1594",
@@ -10937,6 +11620,13 @@
           }
         ],
         "lineageTag": "c340728f-a4d7-4262-9940-324b693c4af7",
+        "measures": [
+          {
+            "name": "label_date",
+            "expression": "CONCATENATE(FORMAT(FIRSTDATE(Dates_lignes[Date]), \"mmmm - yyyy\"),CONCATENATE(\"  à  \",FORMAT(LASTDATE(Dates_lignes[Date]), \"mmmm - yyyy\")))",
+            "lineageTag": "3fe111f4-8333-46d5-a124-033066bd566d"
+          }
+        ],
         "partitions": [
           {
             "name": "Dates_lignes",
