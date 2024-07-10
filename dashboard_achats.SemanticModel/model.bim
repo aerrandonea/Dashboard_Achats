@@ -1082,6 +1082,16 @@
                       "Type": "Noun",
                       "Weight": 0.468
                     }
+                  },
+                  {
+                    "Libellé Produit": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
                   }
                 ]
               },
@@ -4205,6 +4215,250 @@
                   },
                   {
                     "Mt TTC N-1": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "GOLD_ligne.rank_top_N_article": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "GOLD Ligne",
+                    "ConceptualProperty": "Rank_TopN_article"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "rank top N article": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Rank_TopN_article": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "article": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "N article": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "top N article": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "rank best n article": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "rank first n article": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "rank leading n article": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "rank maximum n article": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "rank peak n article": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "rank upper n article": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "best n article": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "first n article": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "leading n article": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "maximum n article": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "Pos.": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "GOLD_ligne.rank_top_N_article_montant": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "GOLD Ligne",
+                    "ConceptualProperty": "Rank_TopN_article_montant"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "rank top N article montant": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Rank_TopN_article_montant": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "rank best n article montant": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.605
+                    }
+                  },
+                  {
+                    "rank first n article montant": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.605
+                    }
+                  },
+                  {
+                    "rank leading n article montant": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.605
+                    }
+                  },
+                  {
+                    "rank maximum n article montant": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.605
+                    }
+                  },
+                  {
+                    "rank peak n article montant": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.605
+                    }
+                  },
+                  {
+                    "rank upper n article montant": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.605
+                    }
+                  },
+                  {
+                    "Pos.": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -9039,6 +9293,72 @@
                 },
                 "State": "Generated"
               },
+              "GOLD_ligne_has_rank_top_N_article": {
+                "Binding": {
+                  "ConceptualEntity": "GOLD Ligne"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "GOLD_ligne.rank_top_N_article"
+                      },
+                      "Subject": {
+                        "Role": "GOLD_ligne"
+                      }
+                    },
+                    "ID": "GOLD_lignes_have_rank_top_N_article",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "GOLD_ligne": {
+                    "Target": {
+                      "Entity": "GOLD_ligne"
+                    }
+                  },
+                  "GOLD_ligne.rank_top_N_article": {
+                    "Target": {
+                      "Entity": "GOLD_ligne.rank_top_N_article"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "GOLD_ligne_has_rank_top_N_article_montant": {
+                "Binding": {
+                  "ConceptualEntity": "GOLD Ligne"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "GOLD_ligne.rank_top_N_article_montant"
+                      },
+                      "Subject": {
+                        "Role": "GOLD_ligne"
+                      }
+                    },
+                    "ID": "GOLD_lignes_have_rank_top_N_article_montant",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "GOLD_ligne": {
+                    "Target": {
+                      "Entity": "GOLD_ligne"
+                    }
+                  },
+                  "GOLD_ligne.rank_top_N_article_montant": {
+                    "Target": {
+                      "Entity": "GOLD_ligne.rank_top_N_article_montant"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "GOLD_ligne_has_rank_top_N_fournisseur": {
                 "Binding": {
                   "ConceptualEntity": "GOLD Ligne"
@@ -10862,6 +11182,32 @@
             "expression": "[Evol_Montant] / [Montant_total_article_N-1]",
             "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
             "lineageTag": "ff9aba58-79a0-4a38-ab5b-daab47d6856f"
+          },
+          {
+            "name": "Rank_TopN_article",
+            "expression": [
+              "",
+              "var _TopN = SELECTEDVALUE('Paramètre'[Value])",
+              "return",
+              "if(HASONEFILTER('GOLD Article'[sLibelleCourt])&&NOT(ISBLANK([Volume_article])),",
+              "SWITCH(TRUE(),RANKX(ALLSELECTED('GOLD Article'[sLibelleCourt]),[Volume_article])<=_TopN,",
+              "RANKX(ALLSELECTED('GOLD Article'[sLibelleCourt]),[Volume_article])))"
+            ],
+            "formatString": "0",
+            "lineageTag": "b83561db-7d8a-424b-bf21-b658bc9fb2f2"
+          },
+          {
+            "name": "Rank_TopN_article_montant",
+            "expression": [
+              "",
+              "var _TopN = SELECTEDVALUE('Paramètre'[Value])",
+              "return",
+              "if(HASONEFILTER('GOLD Article'[sLibelleCourt])&&NOT(ISBLANK([Montant_total_article])),",
+              "SWITCH(TRUE(),RANKX(ALLSELECTED('GOLD Article'[sLibelleCourt]),[Montant_total_article])<=_TopN,",
+              "RANKX(ALLSELECTED('GOLD Article'[sLibelleCourt]),[Montant_total_article])))"
+            ],
+            "formatString": "0",
+            "lineageTag": "499a9eb0-405d-4782-9665-6a399afe67d0"
           }
         ],
         "partitions": [
