@@ -436,12 +436,12 @@
       "name": "43c2236f92005c0beee0",
       "visualContainers": [
         {
-          "config": "{\"name\":\"1f2aab5edab9911a89e9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":396.49484536082474,\"y\":105.77319587628865,\"z\":0,\"width\":486.8041237113402,\"height\":287.0103092783505,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"almaviva007817903466012632.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "config": "{\"name\":\"1f2aab5edab9911a89e9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":396.49484536082474,\"y\":105.15463917525773,\"z\":0,\"width\":486.8041237113402,\"height\":287.0103092783505,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"almaviva007817903466012632.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
           "filters": "[]",
           "height": 287.01,
           "width": 486.80,
           "x": 396.49,
-          "y": 105.77,
+          "y": 105.15,
           "z": 0.00
         },
         {
